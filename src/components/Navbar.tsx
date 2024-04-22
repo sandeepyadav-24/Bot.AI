@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -21,7 +22,7 @@ const Navbar = () => {
         BotAI
       </div>
       <div className="text-white bg-black px-5 rounded-lg py-2 flex flex-row">
-        Get Started
+        <Link to={"/chatpage"}>Get Started</Link>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

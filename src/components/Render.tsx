@@ -17,7 +17,7 @@ const Render = () => {
       ) : (
         <div>
           <h1 className="my-32 text-center text-4xl">BotAI</h1>
-          <div className="flex flex-row">
+          <div className="flex flex-col lg:flex-row ">
             <Box />
             <Box />
             <Box />
