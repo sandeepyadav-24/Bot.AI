@@ -5,7 +5,7 @@ import Render from "./Render";
 
 const MessageBox = () => {
   return (
-    <div className="w-4/5 mx-5 ">
+    <div className="w-3/4 mx-5 ">
       <Render />
       <SearchBox />
     </div>
