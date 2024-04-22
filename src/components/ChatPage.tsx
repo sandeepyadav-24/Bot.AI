@@ -4,7 +4,7 @@ import MessageBox from "./MessageBox";
 
 const ChatPage = () => {
   return (
-    <div className="flex flex-row bg-[#c6c6e7] ">
+    <div className="flex flex-col lg:flex-row bg-[#0F0F0F] ">
       <HistoryPage />
       <MessageBox />
     </div>

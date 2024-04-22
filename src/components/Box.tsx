@@ -8,7 +8,7 @@ const Box = () => {
     "Explain how to manage money with $2000/month salary",
   ];
   return (
-    <div className="mx-5 bg-white rounded-md">
+    <div className="mx-5 my-2 bg-white rounded-md">
       <h1 className="text-2xl text-center my-8">Example</h1>
       {data.map((e, index) => {
         return (

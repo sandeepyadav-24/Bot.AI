@@ -15,8 +15,8 @@ const Render = () => {
       {bool ? (
         <GeminiBox />
       ) : (
-        <div>
-          <h1 className="my-32 text-center text-4xl">BotAI</h1>
+        <div className="w-[710px]">
+          <h1 className="my-20 text-center text-4xl">BotAI</h1>
           <div className="flex flex-col lg:flex-row ">
             <Box />
             <Box />
