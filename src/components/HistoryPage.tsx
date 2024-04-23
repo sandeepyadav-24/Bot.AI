@@ -32,7 +32,7 @@ const HistoryPage = () => {
           );
         })}
       </div>
-      <div className="flex flex-row mx-2 rounded-lg mt-3">
+      <div className="flex flex-row mx-2 rounded-lg mt-7">
         <div className="w-20 h-20 rounded-full bg-white px-5 py-7 font-serif">
           Photo
         </div>

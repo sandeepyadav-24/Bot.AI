@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Navbar = () => {
+  const { loginWithRedirect } = useAuth0();
+  const login = () => {};
   return (
     <div className="flex flex-row justify-between mx-2 lg:mx-20 lg:py-20 py-3   ">
       <div className="text-2xl flex flex-row text-white  font-bold">
@@ -21,8 +24,11 @@ const Navbar = () => {
         </svg>
         <span className="py-1">BotAI</span>
       </div>
-      <div className="text-black bg-white px-5 text-xl font-semibold rounded-lg py-2 flex flex-row">
-        <Link to={"/chatpage"}>Get Started</Link>
+      <div
+        className="text-black bg-white px-5 text-xl font-semibold rounded-lg py-2 flex flex-row"
+        onClick={() => loginWithRedirect()}
+      >
+        Get Started
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
