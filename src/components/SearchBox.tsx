@@ -28,7 +28,7 @@ const SearchBox = () => {
       const response = await result.response;
       const text = response.text();
       // Split response into individual points
-      const points = text.split("**");
+      const points = text;
       setMessage([...message, ...points]);
     }
 
