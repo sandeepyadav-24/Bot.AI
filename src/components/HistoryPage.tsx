@@ -1,9 +1,11 @@
 import React from "react";
 import { useRecoilValue } from "recoil";
 import { HistoryState } from "../Atom/History";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const HistoryPage = () => {
   const historyStateValue = useRecoilValue(HistoryState);
+  const { user, isAuthenticated, isLoading } = useAuth0();
   const copyClipboard = (text) => {
     navigator.clipboard
       .writeText(text)
@@ -37,8 +39,8 @@ const HistoryPage = () => {
           Photo
         </div>
         <div className="mx-3 py-4 text-white text-sm">
-          <h1>Sandeep Yadav </h1>
-          <h1>Sandeepyadav004343@gmail.com</h1>{" "}
+          <h1> {user && user.name ? user.name : "Sandy"}</h1>
+          <h1>{user && user.email ? user.email : "sandy@123"}</h1>
         </div>
       </div>
     </div>
