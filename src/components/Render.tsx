@@ -15,7 +15,7 @@ const Render = () => {
       {bool ? (
         <GeminiBox />
       ) : (
-        <div className="w-[721px] h-[660px] mb-5   bg-[#0F0F0F] mx-40 rounded-md p-5 border-white border-b-[1px]">
+        <div className="w-[721px] h-[600px] mb-5   bg-[#0F0F0F] mx-40 rounded-md p-5 border-white border-b-[1px]">
           <h1 className="my-8 text-center text-4xl text-[#9BA3AF] font-bold">
             Bot.AI
           </h1>
@@ -39,15 +39,6 @@ const Render = () => {
                 "Contextual recommendations",
               ]}
             />
-            <Box
-              headline={"Limitation"}
-              data={[
-                "Lack of common sense and reasoning",
-                "Potential for biased or inappropriate responses",
-                "May Ocassionally produce harmful instructions or biased content",
-                "Limited knowledge of world and events after 2021 ",
-              ]}
-            />
           </div>
         </div>
       )}
@@ -56,3 +47,15 @@ const Render = () => {
 };
 
 export default Render;
+
+{
+  /**<Box
+              headline={"Limitation"}
+              data={[
+                "Lack of common sense and reasoning",
+                "Potential for biased or inappropriate responses",
+                "May Ocassionally produce harmful instructions or biased content",
+                "Limited knowledge of world and events after 2021 ",
+              ]}
+            /> */
+}

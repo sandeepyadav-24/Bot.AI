@@ -13,7 +13,7 @@ const Box = (props) => {
       });
   };
   return (
-    <div className="mx-2 my-2 bg-[#212121] w-[227px] rounded-md">
+    <div className="mx-2 my-2 bg-[#212121] w-[340px] rounded-md">
       <h1 className="text-2xl text-[#9BA3AF] text-center my-8">
         {props.headline}
       </h1>
