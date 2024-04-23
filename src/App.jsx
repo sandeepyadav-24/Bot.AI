@@ -1,6 +1,4 @@
-import HomePage from "./components/HomePage";
-import ChatPage from "./components/ChatPage";
-import Check from "./components/Check";
+import Divider from "./components/Divider";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { RecoilRoot } from "recoil";
 
@@ -10,9 +8,7 @@ const App = () => {
       <RecoilRoot>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/chatpage" element={<ChatPage />} />
-            <Route path="/check" element={<Check />} />
+            <Route path="/" element={<Divider />} />
           </Routes>
         </BrowserRouter>
       </RecoilRoot>
