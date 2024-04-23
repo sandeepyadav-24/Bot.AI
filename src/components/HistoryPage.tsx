@@ -2,6 +2,7 @@ import React from "react";
 import { useRecoilValue } from "recoil";
 import { HistoryState } from "../Atom/History";
 import { useAuth0 } from "@auth0/auth0-react";
+import { Link } from "react-router-dom";
 
 const HistoryPage = () => {
   const historyStateValue = useRecoilValue(HistoryState);
@@ -35,11 +36,17 @@ const HistoryPage = () => {
         })}
       </div>
       <div className="flex flex-row mx-2 rounded-lg mt-7">
-        <div className="w-20 h-20 rounded-full bg-white px-5 py-7 font-serif">
+        <div
+          className="w-20 h-20 rounded-full bg-white px-5 py-7 font-serif"
+          onClick={() => {}}
+        >
           Photo
         </div>
         <div className="mx-3 py-4 text-white text-sm">
-          <h1> {user && user.name ? user.name : "Sandy"}</h1>
+          <Link to={"/check"}>
+            <h1> {user && user.name ? user.name : "Sandy"}</h1>
+          </Link>
+
           <h1>{user && user.email ? user.email : "sandy@123"}</h1>
           <h1>{user && user.profile ? user.profile : "user"}</h1>
         </div>
