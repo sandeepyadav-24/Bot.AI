@@ -22,7 +22,7 @@ const SearchBox = () => {
       // For text-only input, use the gemini-pro model
       const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
-      const prompt = `generate a response in 100 words for ${name} question `;
+      const prompt = `generate a response for ${name} in just 100 words `;
 
       const result = await model.generateContent(prompt);
       const response = await result.response;
