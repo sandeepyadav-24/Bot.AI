@@ -10,7 +10,7 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Divider />} />
-            <Route path="/check" element={<Check/>}
+            <Route path="/check" element={<Check />} />
           </Routes>
         </BrowserRouter>
       </RecoilRoot>
