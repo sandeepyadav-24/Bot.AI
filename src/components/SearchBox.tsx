@@ -3,6 +3,7 @@ import { useRecoilState } from "recoil";
 import { HistoryState } from "../Atom/History";
 import { SearchDataState } from "../Atom/SearchData";
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import { IoMdSend } from "react-icons/io";
 
 const SearchBox = () => {
   const [name, setName] = useState("");
@@ -21,12 +22,14 @@ const SearchBox = () => {
       // For text-only input, use the gemini-pro model
       const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
-      const prompt = `generate a chatbot answer for this ${name}`;
+      const prompt = `generate a response in points like chatbot for   ${name} question `;
 
       const result = await model.generateContent(prompt);
       const response = await result.response;
       const text = response.text();
-      setMessage([...message, text]);
+      // Split response into individual points
+      const points = text.split("**");
+      setMessage([...message, ...points]);
     }
 
     run();
@@ -40,18 +43,10 @@ const SearchBox = () => {
         onChange={(e) => setName(e.target.value)}
       />
       <div
-        className="rounded-full  bg-[#212121] mx-5 w-20 hover:bg-[#8774E1]"
+        className="flex items-center justify-center rounded-full bg-[#212121] ml-3 w-[70px] h-[50px] hover:bg-[#8774E1] "
         onClick={clickHandler}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          className="w-9 h-9 mx-3  text-[#8774E1] hover:text-white"
-        >
-          <path d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" />
-        </svg>
-        ;
+        <IoMdSend className="text-2xl text-[#8774E1] hover:text-white" />
       </div>
     </div>
   );
