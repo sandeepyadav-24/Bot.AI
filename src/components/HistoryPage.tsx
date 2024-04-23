@@ -41,6 +41,7 @@ const HistoryPage = () => {
         <div className="mx-3 py-4 text-white text-sm">
           <h1> {user && user.name ? user.name : "Sandy"}</h1>
           <h1>{user && user.email ? user.email : "sandy@123"}</h1>
+          <h1>{user && user.profile ? user.profile : "user"}</h1>
         </div>
       </div>
     </div>
