@@ -1,7 +1,7 @@
 
-# Avatar.AI
+# Bot.AI
 
-Introducing Avatar.AI, a user-friendly AI chatbot powered by Google's cutting-edge Gemini technology. Simply ask your question, and Avatar.AI leverages Gemini's real-time processing to deliver insightful responses tailored to your request. Built for efficiency, Avatar.AI handles all computations within the Gemini framework, ensuring a smooth and responsive experience. Let Avatar.AI be your conversational companion, ready to assist you whenever you need it
+Introducing Bot.AI, a user-friendly AI chatbot powered by Google's cutting-edge Gemini technology. Simply ask your question, and Bot.AI leverages Gemini's real-time processing to deliver insightful responses tailored to your request. Built for efficiency, Bot.AI handles all computations within the Gemini framework, ensuring a smooth and responsive experience. Let Avatar.AI be your conversational companion, ready to assist you whenever you need it
 
 
 ## Screenshots
@@ -26,9 +26,9 @@ Introducing Avatar.AI, a user-friendly AI chatbot powered by Google's cutting-ed
 
 ## Features
 
-- **Seamless Security:** Avatar.AI prioritizes user safety with a secured website. Additionally, it leverages Auth0 for robust authentication, ensuring your data remains protected.
+- **Seamless Security:** Bot.AI prioritizes user safety with a secured website. Additionally, it leverages Auth0 for robust authentication, ensuring your data remains protected.
 
-- **Powered by Gemini:** Experience unparalleled response accuracy. Avatar.AI utilizes Google's cutting-edge Gemini technology for real-time computations, guaranteeing reliable and insightful answers to your requests.
+- **Powered by Gemini:** Experience unparalleled response accuracy. Bot.AI utilizes Google's cutting-edge Gemini technology for real-time computations, guaranteeing reliable and insightful answers to your requests.
 
 - **Enhanced User Experience:** Boost your efficiency with the Recent Searches feature. Easily access past inquiries and avoid repetitive typing, allowing you to focus on getting things done.
 
