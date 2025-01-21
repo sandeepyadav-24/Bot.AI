@@ -4,8 +4,8 @@ import ChatPage from "./ChatPage";
 import { useAuth0 } from "@auth0/auth0-react";
 
 const Divider = () => {
-  const { user, isAuthenticated, isLoading } = useAuth0();
-  if (user) {
+  const token = localStorage.getItem("token");
+  if (token) {
     return <ChatPage />;
   } else {
     return <HomePage />;

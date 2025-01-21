@@ -12,22 +12,23 @@ const Box = (props) => {
         alert("Failed to copy to clipboard!");
       });
   };
+
   return (
-    <div className="mx-2 my-2 bg-[#212121] w-[340px] rounded-md">
-      <h1 className="text-2xl text-[#9BA3AF] text-center my-8">
+    <div className="w-full bg-[#212121] rounded-md p-4 mb-4">
+      <h1 className="text-2xl text-[#9BA3AF] text-center my-4">
         {props.headline}
       </h1>
-      {props.data.map((e, index) => {
-        return (
+      <div className="space-y-2">
+        {props.data.map((e, index) => (
           <div
-            className="bg-[#0F0F0F] text-white my-2 mx-3 rounded-md py-1 px-2"
+            className="bg-[#0F0F0F] text-white rounded-md py-2 px-3 cursor-pointer hover:bg-[#2C2C2C] transition-colors duration-200"
             key={index}
             onClick={() => copyClipboard(e)}
           >
             {e}
           </div>
-        );
-      })}
+        ))}
+      </div>
     </div>
   );
 };
