@@ -1,11 +1,12 @@
 import { atom } from "recoil";
 
-export interface Message {
+interface Message {
   text: string;
   isUser: boolean;
+  isLoading?: boolean;
 }
 
 export const SearchDataState = atom<Message[]>({
-  key: "SearchDataState", // unique ID
-  default: [], // default value (empty array)
+  key: "SearchDataState",
+  default: [],
 });

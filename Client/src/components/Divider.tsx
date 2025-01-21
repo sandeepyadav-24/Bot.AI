@@ -1,7 +1,6 @@
 import React from "react";
-import HomePage from "./HomePage";
 import ChatPage from "./ChatPage";
-import { useAuth0 } from "@auth0/auth0-react";
+import HomePage from "./HomePage";
 
 const Divider = () => {
   const token = localStorage.getItem("token");
