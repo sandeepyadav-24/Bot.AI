@@ -11,11 +11,14 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5174/api/auth/signup", {
-        username,
-        email,
-        password,
-      });
+      const res = await axios.post(
+        "https://bot-ai-5umt.onrender.com/api/auth/signup",
+        {
+          username,
+          email,
+          password,
+        }
+      );
       console.log(res);
       localStorage.setItem("token", res.data.token);
       navigate("/");

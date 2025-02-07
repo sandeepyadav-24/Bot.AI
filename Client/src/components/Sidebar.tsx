@@ -54,7 +54,7 @@ const Sidebar = ({ isSidebarOpen }) => {
               className="flex flex-row items-center hover:bg-[#2C2C2C] text-[#AAAAAA] my-2 py-1 px-3 rounded-lg cursor-pointer"
               key={index}
             >
-              <div className="bg-black rounded-full w-8 h-8"></div>
+              {/**<div className="bg-black rounded-full w-8 h-8"></div> */}
               <div className={`ml-2 truncate ${!isSidebarOpen && "lg:hidden"}`}>
                 {e}
               </div>

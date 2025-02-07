@@ -104,13 +104,16 @@ const SearchBox = () => {
 
     // Send query to backend for AI processing
     try {
-      const response = await fetch("http://localhost:5174/api/ai/groq", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ prompt: name }),
-      });
+      const response = await fetch(
+        "https://bot-ai-5umt.onrender.com/api/ai/groq",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ prompt: name }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to fetch AI response");

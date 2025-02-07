@@ -8,12 +8,18 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
+    {
+      /**https://bot-ai-5umt.onrender.com */
+    }
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5174/api/auth/login", {
-        email,
-        password,
-      });
+      const res = await axios.post(
+        "https://bot-ai-5umt.onrender.com/api/auth/login",
+        {
+          email,
+          password,
+        }
+      );
       localStorage.setItem("token", res.data.token);
       navigate("/");
     } catch (err) {
